@@ -19,7 +19,7 @@ export const AddNewItem = (props: AddNewItemProps) => {
 
   if (showForm) {
     //we will show the creation form here
-    return <NewItemForm onAdd={onAddHandler} />;
+    return <NewItemForm onAdd={onAddHandler} setShowForm={setShowForm} />;
   }
 
   return (
